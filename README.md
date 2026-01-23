@@ -532,6 +532,7 @@
 
 ### 官方资源
 
+- 📚 [NestJS 官方中文文档](https://docs.nestjs.cn/)
 - 📚 [NestJS 官方文档](https://docs.nestjs.com/)
 - 🎥 [NestJS 官方课程](https://courses.nestjs.com/)
 - 💬 [NestJS Discord 社区](https://discord.gg/nestjs)
