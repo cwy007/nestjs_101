@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Put, Delete, Param } from '@nestjs/common';
+import { Controller, Get, Post, Put, Delete, Param, Req } from '@nestjs/common';
 import { AppService } from './app.service';
 
 @Controller()
@@ -11,7 +11,8 @@ export class AppController {
   }
 
   @Get('users')
-  getUsers(): string {
+  getUsers(@Req() req: Request): string {
+    console.log('Request Headers:', req.headers);
     return 'Get all users';
   }
 
