@@ -1,5 +1,6 @@
 import { Controller, Get, Post, Put, Delete, Param, Req } from '@nestjs/common';
 import { AppService } from './app.service';
+import { type Request } from 'express';
 
 @Controller()
 export class AppController {
@@ -12,7 +13,7 @@ export class AppController {
 
   @Get('users')
   getUsers(@Req() req: Request): string {
-    console.log('Request Headers:', req.headers);
+    console.log('Request Headers debug:', req.headers.cookie);
     return 'Get all users';
   }
 
